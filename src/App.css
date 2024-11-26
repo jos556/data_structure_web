@@ -1,0 +1,144 @@
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.decoration-line {
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  position: relative;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.page-indicator {
+  font-size: 0.9em;
+  color: var(--secondary-color);
+}
+
+.page-indicator .separator {
+  margin: 0 10px;
+  color: var(--accent-color);
+}
+
+.navigation-hint {
+  font-size: 0.85em;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.topic-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag {
+  padding: 5px 15px;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 添加裝飾元素 */
+.main-content::before,
+.main-content::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, var(--accent-color), transparent);
+  opacity: 0.1;
+  border-radius: 50%;
+}
+
+.main-content::before {
+  top: -20px;
+  left: -20px;
+}
+
+.main-content::after {
+  bottom: -20px;
+  right: -20px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .content-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .tag {
+    font-size: 0.8em;
+    padding: 4px 12px;
+  }
+}
+
+.carousel {
+  flex: 1;
+  min-height: 0;
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+} 
