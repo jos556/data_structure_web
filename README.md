@@ -1,6 +1,6 @@
 # 資料結構與演算法教學平台 🎓
 
-![GitHub](https://img.shields.io/github/license/your-username/your-repo)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-4.4.0-646CFF?logo=vite)
 
@@ -43,3 +43,9 @@
   - 深度優先搜尋 (DFS)
 
 ![資料結構關係圖](src/assets/picture.png)
+
+## 📄 License
+
+本專案使用 [MIT License](LICENSE) 授權 - 詳見 [LICENSE](LICENSE) 檔案了解更多資訊。
+
+Copyright (c) 2024 jos556
